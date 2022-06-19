@@ -1,0 +1,17 @@
+.navBar img {
+    width: 50%;
+    height: auto;
+}
+.navBar {
+    display: inline-block;
+    margin: 0px;
+    padding: 100px;
+}
+.navBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    color: white;
+}
