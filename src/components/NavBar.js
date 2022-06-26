@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/navBar.css";
+import { Link } from "react-router-dom";
 
 const NavBar = () => (
   <div className="navBar">
@@ -8,11 +9,15 @@ const NavBar = () => (
       alt="surreal estate logo"
     />
     <ul className="navbar-links">
-      <li className="navBar-links-item">Home</li>
-      <li className="navBar-links-item">View Properties</li>
-      <li className="navBar-links-item">Add a Property</li>
-      <li className="navBar-links-item">About</li>
-      <li className="navBar-links-item">Contact</li>
+      {/* <li className="navBar-links-item">Home</li> */}
+      <Link className="navBar-links-item" to="/">
+        View Properties
+      </Link>
+      <Link className="navBar-links-item" to="/add-property">
+        Add Property
+      </Link>
+      {/* <li className="navBar-links-item">About</li>
+      <li className="navBar-links-item">Contact</li> */}
     </ul>
   </div>
 );
