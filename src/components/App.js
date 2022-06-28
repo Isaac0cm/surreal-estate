@@ -9,14 +9,15 @@ const App = () => {
   return (
     <Router>
       <div className="App">
-        <header className="App-header" />
-        <nav className="navbar">
-          <NavBar />
-          <Switch>
-            <Route exact path="/" component={Properties} />
-            <Route exact path="/add-property" component={AddProperty} />
-          </Switch>
-        </nav>
+        <header className="App-header">
+          <nav className="navbar">
+            <NavBar />
+          </nav>
+        </header>
+        <Switch>
+          <Route exact path="/" component={Properties} />
+          <Route exact path="/add-property" component={AddProperty} />
+        </Switch>
       </div>
     </Router>
   );
